@@ -14,8 +14,9 @@ namespace tp1_CSHARP
            numerosEjercicio6();
            edadEjercicio7();
            mesesEjercicio8();
-           calculadoraEjercicio9();*/
-            ejercicio10();
+           calculadoraEjercicio9();
+            ejercicio10();*/
+            ejercicio11();
 
         }
 
@@ -237,6 +238,43 @@ namespace tp1_CSHARP
                     Console.Write("ingrese una opcion correcta");
                     break;
             }
+        }
+
+        static void ejercicio11()
+        {
+            /*Elegir tipo de figura: cuadrado, rectángulo, círculo. De acuerdo a la figura seleccionada,
+        solicita los datos necesarios para calcular la superficie.*/
+
+            Console.WriteLine("ingrese un tipo de figura cuadrado, rectangulo, circulo");
+
+            String opcion = Console.ReadLine().ToLower();
+
+
+            switch (opcion)
+            {
+                case ("cuadrado"):
+                    Console.WriteLine("ingrese el tamaño de un lado");
+                    double lado = double.Parse(Console.ReadLine());
+                    Console.WriteLine("la superficie del cuadrado es: " + (lado * lado));
+                    break;
+                case ("rectangulo"):
+                    Console.WriteLine("ingrese el tamaño de la base y de la altura");
+                    double base1 = double.Parse(Console.ReadLine());
+                    double alura = double.Parse(Console.ReadLine());
+                    Console.WriteLine("la superficie del rectangulo es: " + (base1 * alura));
+                    break;
+                case ("circulo"):
+                    Console.WriteLine("ingrese radio del circulo");
+                    double radio = double.Parse(Console.ReadLine());                   
+                    Console.WriteLine("la superficie del circulo es: " + (Math.PI *( radio*radio)));
+                    break;
+                default:
+                    Console.WriteLine("ingrese una opcion valida");
+                    break;
+                
+
+            }
+
         }
 
     }
