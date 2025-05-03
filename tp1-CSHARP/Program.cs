@@ -219,19 +219,19 @@ namespace tp1_CSHARP
             switch (letra)
             {
                 case ('a'):
-                    Console.Write("es a");
+                    Console.Write("la nota es excelente");
                     break;
                 case ('b'):
-                    Console.Write("es b");
+                    Console.Write("la nota es Bueno");
                     break;
                 case ('c'):
-                    Console.Write("es c");
+                    Console.Write("la nota es Aprobado");
                     break;
                 case ('d'):
-                    Console.Write("es d");
-                    break;
-                case ('e'):
-                    Console.Write("es e");
+                    Console.Write("la nota es Insuficiente");
+                    break;               
+                case ('f'):
+                    Console.Write("la nota es Reprobado");
                     break;
                 default:
                     Console.Write("ingrese una opcion correcta");
