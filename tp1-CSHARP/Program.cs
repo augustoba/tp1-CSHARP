@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Timers;
 
 namespace tp1_CSHARP
 {
@@ -18,9 +19,9 @@ namespace tp1_CSHARP
             ejercicio10();
             ejercicio11();
             ejercicio12();
-            ejercicio13();*/
-            ejercicio14();
-
+            ejercicio13();
+            ejercicio14();*/
+            ejercicio15();
         }
 
         static void mensajeEjercicio1()
@@ -310,6 +311,8 @@ namespace tp1_CSHARP
         }
         static void ejercicio14()
         {
+            /*Pedir un número y verificar si está entre 10 y 20.*/
+
             Console.WriteLine("ingrese un numero");
                 int numero = int.Parse(Console.ReadLine());
 
@@ -318,7 +321,20 @@ namespace tp1_CSHARP
             Console.ReadLine();
 
         }
+        static void ejercicio15() {
+            /*Pedir un monto y aplicar 10% de descuento si supera $1000.*/
 
+            Console.WriteLine("ingrese un monto");
+            double monto= double.Parse(Console.ReadLine());
+
+           monto= (monto > 1000) ? monto * 0.9: monto;
+
+            Console.WriteLine("el total es: " + monto);
+
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
+
+        }
     }
 }
 
