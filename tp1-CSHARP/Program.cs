@@ -20,8 +20,9 @@ namespace tp1_CSHARP
             ejercicio11();
             ejercicio12();
             ejercicio13();
-            ejercicio14();*/
-            ejercicio15();
+            ejercicio14();
+            ejercicio15();*/
+            ejercicio16();
         }
 
         static void mensajeEjercicio1()
@@ -334,6 +335,18 @@ namespace tp1_CSHARP
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
 
+        }
+
+        static void ejercicio16() {
+            /*Mostrar todos los números pares del 1 al 50.*/
+
+            for (int i = 1; i <= 50; i++) {
+
+                Console.WriteLine((i % 2 == 0) ? i.ToString() : string.Empty);
+
+            }
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
         }
     }
 }
