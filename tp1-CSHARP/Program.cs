@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 using System.Timers;
 
 namespace tp1_CSHARP
@@ -23,18 +24,19 @@ namespace tp1_CSHARP
             ejercicio14();
             ejercicio15();
             ejercicio16();
-            ejercicio17();*/
-            ejercicio18();
+            ejercicio17();
+            ejercicio18();*/
+            ejercicio19();
         }
 
-             static void mensajeEjercicio1()
+        static void mensajeEjercicio1()
         {
             /*EJERCICIO 1
          Mostrar un mensaje fijo: "Bienvenido al curso de C#".
          */
             Console.WriteLine("Bienvenido al curso de C#");
         }
-            static void edadEjercicio2()
+        static void edadEjercicio2()
         {
             /*EJERCICIO 2 
          Pedir la edad del usuario y mostrarla.
@@ -44,7 +46,7 @@ namespace tp1_CSHARP
 
             Console.WriteLine("la edad es: " + edad);
         }
-            static void nombreEjercicio3()
+        static void nombreEjercicio3()
         {
             /*EJERCICIO 3 
          Pedir la edad del usuario y mostrarla.
@@ -55,7 +57,7 @@ namespace tp1_CSHARP
             String apellido = Console.ReadLine();
             Console.WriteLine("el nombre y apellido es : " + nombre + " " + apellido);
         }
-             static void dobleEjercicio4()
+        static void dobleEjercicio4()
         {
             /*EJERCICIO 4
         Pedir un número y mostrar su doble.
@@ -65,7 +67,7 @@ namespace tp1_CSHARP
             Console.WriteLine("el doble del numero: " + numero + " es : " + (numero * 2));
 
         }
-             static void areaEjercicio5()
+        static void areaEjercicio5()
         {
             /*EJERCICIO 5
              Pedir el lado de un cuadrado y calcular el área.
@@ -76,7 +78,7 @@ namespace tp1_CSHARP
 
             Console.WriteLine("el area es: " + (lado * lado));
         }
-            static void numerosEjercicio6()
+        static void numerosEjercicio6()
         {
             /*EJERCICIO 6
             Pedir tres números y mostrar cuál es el mayor.
@@ -99,7 +101,7 @@ namespace tp1_CSHARP
             }
             Console.WriteLine("el numero mas grande es: " + aux);
         }
-             static void edadEjercicio7()
+        static void edadEjercicio7()
         {
 
             /*EJERCICIO 7
@@ -117,7 +119,7 @@ namespace tp1_CSHARP
 
 
         }
-             static void mesesEjercicio8()
+        static void mesesEjercicio8()
         {
 
             /*EJERCICIO 8
@@ -173,7 +175,7 @@ namespace tp1_CSHARP
             }
 
         }
-             static void calculadoraEjercicio9()
+        static void calculadoraEjercicio9()
         {
 
             /*EJERCICIO 9
@@ -212,7 +214,7 @@ namespace tp1_CSHARP
             }
 
         }
-             static void ejercicio10()
+        static void ejercicio10()
         {
             /*EJERCICIO 10
      Calificación de letras: A, B, C, D, F y su correspondiente mensaje.
@@ -242,7 +244,7 @@ namespace tp1_CSHARP
                     break;
             }
         }
-             static void ejercicio11()
+        static void ejercicio11()
         {
             /*Elegir tipo de figura: cuadrado, rectángulo, círculo. De acuerdo a la figura seleccionada,
         solicita los datos necesarios para calcular la superficie.*/
@@ -278,7 +280,7 @@ namespace tp1_CSHARP
             }
 
         }
-             static void ejercicio12()
+        static void ejercicio12()
         {
             /*Ingresar tipo de usuario: administrador, invitado o usuario. De acuerdo al valor
             seleccionado mostrar un mensaje.*/
@@ -302,7 +304,7 @@ namespace tp1_CSHARP
 
             }
         }
-             static void ejercicio13()
+        static void ejercicio13()
         {
             /* Pedir un número y decir si es par o impar*/
             Console.WriteLine("ingrese un numero");
@@ -312,7 +314,7 @@ namespace tp1_CSHARP
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
         }
-             static void ejercicio14()
+        static void ejercicio14()
         {
             /*Pedir un número y verificar si está entre 10 y 20.*/
 
@@ -338,7 +340,6 @@ namespace tp1_CSHARP
             Console.ReadLine();
 
         }
-
         static void ejercicio16() {
             /*Mostrar todos los números pares del 1 al 50.*/
 
@@ -350,7 +351,6 @@ namespace tp1_CSHARP
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
         }
-
         static void ejercicio17() {
 
             Console.WriteLine("ingrese la cantidad de numeros a sumar");
@@ -366,7 +366,6 @@ namespace tp1_CSHARP
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
         }
-
         static void ejercicio18() {
             /*Simulador de notas: ingresar 5 notas, calcular promedio y determinar si aprueba.*/
 
@@ -387,6 +386,43 @@ namespace tp1_CSHARP
             Console.ReadLine();
 
         }
-    }
-}
+        static void ejercicio19() {
+            Console.WriteLine("ingrese a que moneda desea convertir");
+            Console.WriteLine("1- PESO A DOLARES");
+            Console.WriteLine("2- PESO A EUROS");
+            Console.WriteLine("3- SALIR");
 
+            int opcion = int.Parse(Console.ReadLine());
+            const double dolar =1143.55;
+            const double euro = 1288.00;
+
+            switch (opcion)
+            {
+                case 1:
+                    Console.WriteLine("ingrese el monto");
+                    double montoD = double.Parse(Console.ReadLine());
+                    Console.WriteLine("el valor es: " + (montoD * dolar));
+
+                    break;
+                case 2:
+                    Console.WriteLine("ingrese el monto");
+                    double montoE = double.Parse(Console.ReadLine());
+                    Console.WriteLine("el valor es: " + (montoE * euro));
+                    break;
+                case 3:
+                    Console.WriteLine("finalizando programa");
+                    break;
+                    default: Console.WriteLine("ingrese una opcion correcta");
+                    break;
+            }
+
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
+
+
+
+        }
+
+    }
+
+}
