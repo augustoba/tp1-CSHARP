@@ -21,8 +21,9 @@ namespace tp1_CSHARP
             ejercicio12();
             ejercicio13();
             ejercicio14();
-            ejercicio15();*/
-            ejercicio16();
+            ejercicio15();
+            ejercicio16();*/
+            ejercicio17(); 
         }
 
         static void mensajeEjercicio1()
@@ -345,6 +346,22 @@ namespace tp1_CSHARP
                 Console.WriteLine((i % 2 == 0) ? i.ToString() : string.Empty);
 
             }
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
+        }
+
+        static void ejercicio17() {
+
+            Console.WriteLine("ingrese la cantidad de numeros a sumar");
+
+            int numero= int.Parse(Console.ReadLine());
+            int total= 0;
+
+            for (int i = 1; i <= numero; i++) {
+                total= total+i;
+            }
+
+            Console.WriteLine("la suma total es: " + total);
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
         }
