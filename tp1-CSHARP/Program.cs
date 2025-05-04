@@ -22,18 +22,19 @@ namespace tp1_CSHARP
             ejercicio13();
             ejercicio14();
             ejercicio15();
-            ejercicio16();*/
-            ejercicio17(); 
+            ejercicio16();
+            ejercicio17();*/
+            ejercicio18();
         }
 
-        static void mensajeEjercicio1()
+             static void mensajeEjercicio1()
         {
             /*EJERCICIO 1
          Mostrar un mensaje fijo: "Bienvenido al curso de C#".
          */
             Console.WriteLine("Bienvenido al curso de C#");
         }
-        static void edadEjercicio2()
+            static void edadEjercicio2()
         {
             /*EJERCICIO 2 
          Pedir la edad del usuario y mostrarla.
@@ -43,7 +44,7 @@ namespace tp1_CSHARP
 
             Console.WriteLine("la edad es: " + edad);
         }
-        static void nombreEjercicio3()
+            static void nombreEjercicio3()
         {
             /*EJERCICIO 3 
          Pedir la edad del usuario y mostrarla.
@@ -54,7 +55,7 @@ namespace tp1_CSHARP
             String apellido = Console.ReadLine();
             Console.WriteLine("el nombre y apellido es : " + nombre + " " + apellido);
         }
-        static void dobleEjercicio4()
+             static void dobleEjercicio4()
         {
             /*EJERCICIO 4
         Pedir un número y mostrar su doble.
@@ -64,7 +65,7 @@ namespace tp1_CSHARP
             Console.WriteLine("el doble del numero: " + numero + " es : " + (numero * 2));
 
         }
-        static void areaEjercicio5()
+             static void areaEjercicio5()
         {
             /*EJERCICIO 5
              Pedir el lado de un cuadrado y calcular el área.
@@ -75,7 +76,7 @@ namespace tp1_CSHARP
 
             Console.WriteLine("el area es: " + (lado * lado));
         }
-        static void numerosEjercicio6()
+            static void numerosEjercicio6()
         {
             /*EJERCICIO 6
             Pedir tres números y mostrar cuál es el mayor.
@@ -98,7 +99,7 @@ namespace tp1_CSHARP
             }
             Console.WriteLine("el numero mas grande es: " + aux);
         }
-        static void edadEjercicio7()
+             static void edadEjercicio7()
         {
 
             /*EJERCICIO 7
@@ -116,7 +117,7 @@ namespace tp1_CSHARP
 
 
         }
-        static void mesesEjercicio8()
+             static void mesesEjercicio8()
         {
 
             /*EJERCICIO 8
@@ -172,7 +173,7 @@ namespace tp1_CSHARP
             }
 
         }
-        static void calculadoraEjercicio9()
+             static void calculadoraEjercicio9()
         {
 
             /*EJERCICIO 9
@@ -211,7 +212,7 @@ namespace tp1_CSHARP
             }
 
         }
-        static void ejercicio10()
+             static void ejercicio10()
         {
             /*EJERCICIO 10
      Calificación de letras: A, B, C, D, F y su correspondiente mensaje.
@@ -241,7 +242,7 @@ namespace tp1_CSHARP
                     break;
             }
         }
-        static void ejercicio11()
+             static void ejercicio11()
         {
             /*Elegir tipo de figura: cuadrado, rectángulo, círculo. De acuerdo a la figura seleccionada,
         solicita los datos necesarios para calcular la superficie.*/
@@ -277,7 +278,7 @@ namespace tp1_CSHARP
             }
 
         }
-        static void ejercicio12()
+             static void ejercicio12()
         {
             /*Ingresar tipo de usuario: administrador, invitado o usuario. De acuerdo al valor
             seleccionado mostrar un mensaje.*/
@@ -301,7 +302,7 @@ namespace tp1_CSHARP
 
             }
         }
-        static void ejercicio13()
+             static void ejercicio13()
         {
             /* Pedir un número y decir si es par o impar*/
             Console.WriteLine("ingrese un numero");
@@ -311,7 +312,7 @@ namespace tp1_CSHARP
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
         }
-        static void ejercicio14()
+             static void ejercicio14()
         {
             /*Pedir un número y verificar si está entre 10 y 20.*/
 
@@ -364,6 +365,27 @@ namespace tp1_CSHARP
             Console.WriteLine("la suma total es: " + total);
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
+        }
+
+        static void ejercicio18() {
+            /*Simulador de notas: ingresar 5 notas, calcular promedio y determinar si aprueba.*/
+
+            double notas = 0;
+
+
+            for (int i = 1;i <= 5; i++) {
+                Console.WriteLine("ingrese la nota");
+                notas = notas + double.Parse(Console.ReadLine());
+            }
+
+            double promedio = notas / 5;
+            Console.WriteLine("el promedio es: " +  promedio);
+
+            Console.WriteLine((promedio >= 6) ? "aprueba" : "desaprueba");
+
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
+
         }
     }
 }
