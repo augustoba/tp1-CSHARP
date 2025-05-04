@@ -277,7 +277,6 @@ namespace tp1_CSHARP
             }
 
         }
-
         static void ejercicio12()
         {
             /*Ingresar tipo de usuario: administrador, invitado o usuario. De acuerdo al valor
