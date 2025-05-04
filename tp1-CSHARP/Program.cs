@@ -16,8 +16,9 @@ namespace tp1_CSHARP
            mesesEjercicio8();
            calculadoraEjercicio9();
             ejercicio10();
-            ejercicio11();*/
-            ejercicio12();
+            ejercicio11();
+            ejercicio12();*/
+            ejercicio13();
 
         }
 
@@ -28,8 +29,6 @@ namespace tp1_CSHARP
          */
             Console.WriteLine("Bienvenido al curso de C#");
         }
-
-
         static void edadEjercicio2()
         {
             /*EJERCICIO 2 
@@ -40,8 +39,6 @@ namespace tp1_CSHARP
 
             Console.WriteLine("la edad es: " + edad);
         }
-
-
         static void nombreEjercicio3()
         {
             /*EJERCICIO 3 
@@ -240,7 +237,6 @@ namespace tp1_CSHARP
                     break;
             }
         }
-
         static void ejercicio11()
         {
             /*Elegir tipo de figura: cuadrado, rectángulo, círculo. De acuerdo a la figura seleccionada,
@@ -300,6 +296,20 @@ namespace tp1_CSHARP
 
 
             }
+        }
+        static void ejercicio13()
+        {
+            /* Pedir un número y decir si es par o impar*/
+            Console.WriteLine("ingrese un numero");
+            int numero = int.Parse(Console.ReadLine()!);
+
+            string resultado = (numero % 2 == 0) ? "El número es par" : "El número es impar";
+
+            Console.WriteLine(resultado);
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
+
+
         }
 
     }
