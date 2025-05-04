@@ -15,8 +15,9 @@ namespace tp1_CSHARP
            edadEjercicio7();
            mesesEjercicio8();
            calculadoraEjercicio9();
-            ejercicio10();*/
-            ejercicio11();
+            ejercicio10();
+            ejercicio11();*/
+            ejercicio12();
 
         }
 
@@ -275,6 +276,31 @@ namespace tp1_CSHARP
 
             }
 
+        }
+
+        static void ejercicio12()
+        {
+            /*Ingresar tipo de usuario: administrador, invitado o usuario. De acuerdo al valor
+            seleccionado mostrar un mensaje.*/
+
+            Console.WriteLine("ingrese el tipo de usuario: adminsitrador, invitado o usuario");
+            String opcion = Console.ReadLine().ToLower();
+            switch (opcion)
+            {
+                case "administrador" :
+                    Console.WriteLine("bienvenido administrador");
+                    break;
+
+                case "invitado":
+                    Console.WriteLine("bienvenido invitado");
+                    break;
+                case "usuario":
+                    Console.WriteLine("bienvenido usuario");
+                    break;
+
+
+
+            }
         }
 
     }
