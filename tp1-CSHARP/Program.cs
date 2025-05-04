@@ -17,8 +17,9 @@ namespace tp1_CSHARP
            calculadoraEjercicio9();
             ejercicio10();
             ejercicio11();
-            ejercicio12();*/
-            ejercicio13();
+            ejercicio12();
+            ejercicio13();*/
+            ejercicio14();
 
         }
 
@@ -302,13 +303,19 @@ namespace tp1_CSHARP
             /* Pedir un número y decir si es par o impar*/
             Console.WriteLine("ingrese un numero");
             int numero = int.Parse(Console.ReadLine()!);
-
             string resultado = (numero % 2 == 0) ? "El número es par" : "El número es impar";
-
             Console.WriteLine(resultado);
             Console.WriteLine("Presione Enter para salir...");
             Console.ReadLine();
+        }
+        static void ejercicio14()
+        {
+            Console.WriteLine("ingrese un numero");
+                int numero = int.Parse(Console.ReadLine());
 
+            Console.WriteLine((numero >= 10 && numero <= 20) ? "El número está entre 10 y 20" : "El número no se encuentra entre 10 y 20");
+            Console.WriteLine("Presione Enter para salir...");
+            Console.ReadLine();
 
         }
 
